@@ -4,7 +4,15 @@ Release Desk is a developer workflow service for turning a requested code change
 
 ## Current Status
 
-This repository starts with the product contract and first implementation target. Runtime code will be added in small, testable slices.
+The first runnable slice is implemented:
+
+- HTTP intake API for work requests.
+- Deterministic checklist generation.
+- Local JSON storage for requests and audit events.
+- Human approval state and approval endpoint.
+- Health and readiness endpoints.
+- Structured logs and trace IDs.
+- Node test coverage for success and failure paths.
 
 ## Product Boundaries
 
@@ -20,3 +28,12 @@ This repository starts with the product contract and first implementation target
 3. Generate a deterministic implementation checklist from configured rules.
 4. Require a human approval state before any release action can be recorded.
 5. Expose an audit trail for request, test, review, and release-decision events.
+
+## Run
+
+```powershell
+npm test
+npm start
+```
+
+The service listens on `http://127.0.0.1:4321`.

@@ -4,6 +4,6 @@
 
 - Request/response schema design.
 - Audit event model.
-- Test-run capture.
-- Review and release state transitions.
-- Failure handling for missing repository context, failing tests, and incomplete review packets.
+- Deterministic checklist rules.
+- Approval state transitions.
+- Failure handling for missing repository context and invalid intake requests.
